@@ -10,7 +10,7 @@ import logo from "../assets/footer.svg";
 const ServiceDetails = () => {
   return (
     <div className="container px-6 py-8 mx-auto">
-      <Banners />
+      <Banners title='Service Details' name='Service Details' />
       <div className="mt-24 flex gap-8">
         <div className="w-2/3">
           <img className="rounded-xl" src={imgs} alt="" />

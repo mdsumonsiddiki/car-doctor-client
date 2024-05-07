@@ -1,6 +1,7 @@
 import bgimgs from "../../assets/images/banner/4.jpg";
+import PropTypes from "prop-types";
 
-const Banners = () => {
+const Banners = ({name, title}) => {
   return (
     <div
       className="relative w-full bg-no-repeat bg-cover bg-center rounded-xl py-28  z-10"
@@ -10,15 +11,18 @@ const Banners = () => {
       <div className="flex items-center pl-14 w-full h-full bg-gray-900/40 z-40">
         <div className="text-left w-1/3">
           <h1 className="text-3xl font-bold text-white lg:text-6xl">
-            Service Details
+            {title}
           </h1>
         </div>
         <div className="bg-red py-3 px-9 rounded-t-3xl font-medium text-xl text-white absolute bottom-0 left-1/2 transform -translate-x-1/2"> 
-            <h2>Home/Service Details</h2>
+            <h2>Home/{name}</h2>
         </div>
       </div>
     </div>
   );
 };
-
+Banners.propTypes = {
+  name: PropTypes.string,
+  title: PropTypes.string,
+};
 export default Banners;

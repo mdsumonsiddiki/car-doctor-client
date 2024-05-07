@@ -3,6 +3,7 @@ import Root from "../layout/Root";
 import Home from "../pages/Home";
 import SingUp from "../pages/SingUp";
 import ServiceDetails from "../pages/ServiceDetails";
+import CheckOut from "../pages/CheckOut";
 
 
 
@@ -22,7 +23,11 @@ const router = createBrowserRouter([
         {
           path: '/servicedetails',
           element: <ServiceDetails/>
-        }
+        },
+        {
+          path: '/checkout',
+          element: <CheckOut/>
+        },
       ]
     },
   ]);
