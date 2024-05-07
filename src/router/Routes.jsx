@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import SingUp from "../pages/SingUp";
 import ServiceDetails from "../pages/ServiceDetails";
 import CheckOut from "../pages/CheckOut";
+import AddService from "../pages/AddService";
 
 
 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
         {
           path: '/checkout',
           element: <CheckOut/>
+        },
+        {
+          path: '/addservice',
+          element: <AddService/>
         },
       ]
     },
